@@ -2,3 +2,7 @@
 font-family: 'Roboto Slab', serif;
 
 */
+
+.contact-form-message {
+    resize: none;
+}
