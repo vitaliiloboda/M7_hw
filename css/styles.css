@@ -3,6 +3,119 @@ font-family: 'Roboto Slab', serif;
 
 */
 
+/*  FONTS */
+
+/* pinyon-script-regular - latin */
+@font-face {
+  font-family: "Pinyon Script";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pinyon Script"), local("PinyonScript"),
+    url("../fonts/pinyon-script-v7-latin-regular.woff2") format("woff2"),
+    url("../fonts/pinyon-script-v7-latin-regular.woff") format("woff");
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* GENERAL */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  block-size: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: autp;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* ELEMENTS */
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-logo {
+  font-family: "Pinyon Script", cursive;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 41px;
+  text-decoration: none;
+  color: #fed136;
+}
+
+.main-nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 480px;
+    justify-content: space-between;
+}
+
+.main-nav-list-item a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 41px;
+    font-weight: 400;
+    color: #222222;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 75px;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+/* CONTACT FORM */
+
 .contact-form-message {
-    resize: none;
+  resize: none;
+}
+
+/* visually-hidden helper */
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
