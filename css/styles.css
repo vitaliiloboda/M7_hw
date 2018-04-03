@@ -290,7 +290,7 @@ h2 {
 
 .black::after {
   content: '';
-  background-image: url("../img/map-image.jpg");
+  background-image: url("../img/map-image.png");
   width: 614px;
   height: 537px;
   display: inline-block;
