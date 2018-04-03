@@ -282,13 +282,13 @@ h2 {
   justify-content: space-between;
 }
 
-.black {
+.main-footer {
   width: 1400px;
-  background-image: url("../img/background.jpg");
+  background: #222222;
   position: relative;
 }
 
-.black::after {
+.main-footer::after {
   content: '';
   background-image: url("../img/map-image.png");
   width: 614px;
